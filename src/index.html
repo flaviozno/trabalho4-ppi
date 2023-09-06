@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+  <head>
+    <title>Apostila JavaScript Progressivo - by Me</title>
+    <script type="text/javascript" src="./script/index.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body onload="inicia()">
+    <h1>Jogo da Velha</h1>
+    <table>
+      <tr>
+        <td id="cell00" onclick="jogar(0, 0)"></td>
+        <td id="cell01" onclick="jogar(0, 1)"></td>
+        <td id="cell02" onclick="jogar(0, 2)"></td>
+      </tr>
+      <tr>
+        <td id="cell10" onclick="jogar(1, 0)"></td>
+        <td id="cell11" onclick="jogar(1, 1)"></td>
+        <td id="cell12" onclick="jogar(1, 2)"></td>
+      </tr>
+      <tr>
+        <td id="cell20" onclick="jogar(2, 0)"></td>
+        <td id="cell21" onclick="jogar(2, 1)"></td>
+        <td id="cell22" onclick="jogar(2, 2)"></td>
+      </tr>
+    </table>
+    <br />
+    <button onclick="restart()">Restart</button>
+    <div id="aviso"></div>
+    <span
+      >Nota: Página baseada no código disponível em
+      <a href="https://www.javascriptprogressivo.net" target="_blank"
+        >javascriptprogressivo.net</a
+      ></span
+    >
+    <br />
+  </body>
+</html>
